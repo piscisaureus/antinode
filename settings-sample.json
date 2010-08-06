@@ -1,7 +1,7 @@
 {
     "port" : 80,
 
-    "hosts" : { 
+    "hosts" : {
         "www.markhansen.co.nz" : {
             "root" : "/home/Moon/www/markhansen.co.nz/"
         },
@@ -15,6 +15,12 @@
 
     "default_host" : {
         "root" : "/home/Moon/www/default/"
-    }
+    },
 
+    "runners" : [
+        {
+            "type"   : "sjs",
+            "regexp" : "^.*?\\.sjs(?=$|/)"
+        }
+    ]
 }
