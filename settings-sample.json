@@ -21,6 +21,11 @@
         {
             "type"   : "sjs",
             "regexp" : "^.*?\\.sjs(?=$|/)"
+        },
+        {
+            "type"   : "cgi",
+            "regexp" : "^.*?\\.php(?=$|/)",
+            "exec"   : "/usr/bin/php-cgi"
         }
     ]
 }
